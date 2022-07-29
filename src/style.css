@@ -1,0 +1,99 @@
+html {
+    position: relative; 
+    width: 1500px;
+    background:#FEFAE0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/*Tipografía*/
+/*Encabezado*/
+h1 { 
+    font-family: 'Piazzolla';
+    font-size: 69px;
+    line-height: 85px;
+    text-align: center;
+    color: #FEFAE0;
+   
+}
+/*Títulos*/
+h2{
+    font-family: 'Piazzolla';
+    font-style: bold;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    color: #023047;
+    }
+/*Título de pie de página*/
+h5{
+font-family: 'Piazzolla';
+font-style: normal;
+font-weight: 666;
+font-size: 24px;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+}
+/*Secciones de la página*/
+header{
+    position: relative;
+    width: 1500px;
+    height: 100px;
+    background: #8ECAE6;
+}
+main{
+    position: absolute;
+    background: #FFB703;
+    padding: 25px;
+    width: 650px;
+    text-align: justify;
+}
+aside{
+    padding: 25px;
+    position: absolute;
+    width: 900px;
+    left: 325px;
+    top: 200px;
+    text-align: center;
+    background-color:#023047;
+}
+
+input[type=text],input[type=email]{
+    padding: 15px;
+    margin:10px 0;  
+    border-radius:16px; 
+    font-family: "Piazzolla";
+    font-size: 20px;
+    
+}
+select{
+    width: 30%;
+    padding: 15px;
+    border-radius:16px; 
+    font-family: "Piazzolla";
+    font-size: 20px;
+}
+button{
+    appearance:none;
+    -webkit-appearance:none;
+    /* usual styles */
+    padding:15px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:400;
+    border-radius:5px;
+    width:30%;  
+    
+}
+footer{ 
+    position: absolute;
+    width: 1500px;
+    height: 98px; 
+    top: 1000px;
+    background: #219EBC
+}

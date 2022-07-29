@@ -1,0 +1,52 @@
+//// index.html ////
+ <main>
+      <h1>Museo de Armas de Campeche</h1>
+    </main>
+
+    <div>
+    <h1>Realiza tu pago</h1>
+      <h3>Ingresa tus datos</h3>
+      <label for="creditCardNumber">Número de tarjeta:</label>
+      <input type="text" id="numTarjeta" name="numTarjeta"> 
+  
+      <button id="botonValidar" type="button"> Validar</button>
+  
+      
+      <p id="justNumbers"></p>
+      <p id="justSixteen"></p>
+    
+    </div> 
+    
+    
+    <footer></footer>
+
+///index.js ////
+import validator from './validator.js';
+
+const boton = document.getElementById ("botonValidar")
+boton.addEventListener("click",getCardNumb)
+
+
+
+function getCardNumb(){
+    const numStr = document.getElementById ("numTarjeta").value;
+    let numArr = numStr.split("");
+    if (numArr.length==16) {
+       for (let i=0; i-16; i++){
+           if(isNaN(numArr[i])){
+               document.getElementById("justNumbers").innerHTML="Este algortimo sólo lee caracteres numéricos"
+            }
+         }
+       var arre = validator.isValid(numArr);
+        document.getElementById("justSixteen").innerHTML=arre
+   } 
+   else {document.getElementById("justSixteen").innerHTML="Tienes que escribir 16 dígitos"} 
+
+}    
+   
+//parseInt(numArr[0],10)
+  //  (parseInt(numArr[0],10) == 'NaN') 
+ // document.getElementById("despliega").innerHTML = "Numero 0 es = " + numArr[0]
+    
+
+
