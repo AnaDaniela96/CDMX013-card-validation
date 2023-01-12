@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8">
-      <title>Tarjeta de crédito válida</title>
-      <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <title>CardValidation</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header><img src="logo.png"><h1>Museo de barcos y armas de Campeche</h1> </header>
-      
-    <aside>jldsajflasdjf</aside>
+   <div id="container">
+    <header>
+      <h1 id="titleHeader">Museo de barcos y armas de Campeche</h1>
+    </header>
+    <aside>jldsajflasdjf
+      <img src="./assets/logo.png" />
+    </aside>
     <main>
-        <for
-        <h2 style =background-color:white>Realiza tu compra registrando tus datos</h2>
+      <form>
+        <h2>Registrate</h2>
         <label for="firstName">Nombre(s)</label>
-        <input type="text" id="firstName" name="firstName" placeholder="llena el formulario"> 
-        <label id = "primerNombre"></label>
-        <img src="logo.png">
-        <br>
-        <br>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="Campo obligatorio"
+        />
+        <label id="primerNombre"></label>
+
+        <br />
+        <br />
         <label for="lastName">Apellidos</label>
-        <input type="text" id="lastName" name="lastName" placeholder="llena el formulario"> 
-        <label id = "apellido"></label>
-        <p id = "inscripción"></p>
-        <br>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Campo obligatorio"
+        />
+        <label id="apellido"></label>
+        <p id="inscripción"></p>
+        <br />
         <label for="lastName">Correo Electrónico</label>
-        <input type="email" id="email" name="email" placeholder="llena el formulario"> 
-        <label id = "correo"></label>
-        <br>
-        <br>
-        <label for= "typeTarjet">Elije el tipo de tarjeta</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Campo obligatorio"
+        />
+        <label id="correo"></label>
+        <br />
+        <br />
+        <label for="typeTarjet">Elije el tipo de tarjeta</label>
         <select name="typeTarjet" id="typeTarjet">
-          <option value = "select">Seleccionar</option>
-          <option value = "debito"> Tarjeta de débito</option>
-          <option value = "credito"> Tarjeta de crédito</option>
+          <option value="select">Seleccionar</option>
+          <option value="debito">Tarjeta de débito</option>
+          <option value="credito">Tarjeta de crédito</option>
         </select>
         <label id="tipoTarjeta"></label>
-        <br>
-        <br>
-        <h2 style =background-color:white>El último paso implica validar tu tarjeta</h2>
-        
+        <br />
+        <br />
+        <h3>Ingresa los datos de tu tarjeta y valida para continuar.</h3>
+        <br />
+
         <label for="creditCardNumber">Número de tarjeta:</label>
-        <input type="text" id="numTarjeta" name="numTarjeta"  placeholder="llena el formulario">
-        <button id="botonValidar" type="button"> Validar</button>
-        <p id="justNumbers" style="background-color:#8ECAE6 ;"></p>
+        <input
+          type="text"
+          id="numTarjeta"
+          name="numTarjeta"
+          placeholder="Campo obligatorio"
+        />
+        <button id="botonValidar" type="button">Validar</button>
+
+        <p id="justNumbers"></p>
         <p id="justSixteen"></p>
-        <br> 
-        <p id="asteriscos" style="color:red"></p>
-        <button id="sendForm" type="button">Registrarte</button> 
+        <br />
+        <label id="asteriscos"></label>
+        <button id="sendForm" type="button">Terminar registro</button>
       </form>
     </main>
-      
-    <!--<footer><h5>Inicio |  Contactos  | Políticas de privacidad</h5></footer> -->
+
+    <footer><h5>Inicio | Contactos | Políticas de privacidad</h5></footer>
+   </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
-
