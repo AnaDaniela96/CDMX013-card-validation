@@ -1,25 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-  }
-html {
-    position: relative; 
-    /*width: 1500px;*/
-   background:#FEFAE0; 
 }
 
+
+
 /*Tipografía*/
-/*Encabezado*/
 h1 /*título de página*/ {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 30px;
-    line-height: 85px;
-    color: #FEFAE0;
-}
-#titleHeader{
-    position: relative;
-    top: -110%;
-    left: 30%;
+    font-family: 'Oswald';
+    font-style: normal;
+    color: #3F51B5;
+    font-size: 34px;
 }
 /*Títulos*/
 h2{
@@ -37,17 +28,24 @@ h4{
     color:red;
 }
 h5{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Oswald';
+    font-style: normal;
     font-size: 16px;
-    color:#023047;
+    color:#FFB703;
     text-align: center;
 }
 /*Secciones de la página*/
 header{
-    position:sticky;
-    width: 100%;
-    height: 100%;
-    background: #023047;
+    background:  #FFB703;
+    height:150px;
+}
+.tittle{
+    position: relative;
+    left: 40%;
+    top: 50%;
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 main{
     position: static;
@@ -89,13 +87,5 @@ button{
 
 }
 footer{ 
-    position: sticky;
-    width: 1500px;
-    height: 98px; 
-    top: 1000px;
-    background: #219EBC
-}
-img {
-    max-width: 100%;
-    max-height: 100%;
+    background: #3F51B5;
 }

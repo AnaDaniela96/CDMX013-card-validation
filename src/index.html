@@ -4,81 +4,106 @@
     <meta charset="utf-8" />
     <title>CardValidation</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-   <div id="container">
     <header>
-      <h1 id="titleHeader">Museo de barcos y armas de Campeche</h1>
+      <div class="tittle">
+        <h1>Museo de barcos y armas de Campeche</h1>
+      </div>
     </header>
-    <aside>jldsajflasdjf
-      <img src="./assets/logo.png" />
-    </aside>
-    <main>
-      <form>
-        <h2>Registrate</h2>
-        <label for="firstName">Nombre(s)</label>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          placeholder="Campo obligatorio"
-        />
-        <label id="primerNombre"></label>
+    <form>
+      <h2>
+        Este es el sitio para pagar tu entrada al Museo más increíble de
+        Campeche. Estás a sólo un paso.
+      </h2>
+      <p>*Recuerda que sólo aceptamos pagos con tarjeta de debito y crédito</p>
+      <label>1.Elige el número de boletos</label>
+      <input type="number" />
+      <label>2.Elige la fecha de tu visita</label>
+      <input
+        type="date"
+        id="start"
+        name="trip-start"
+        value="2023-01-01"
+        min="2023-01-01"
+        max="2023-12-31"
+      />
+      <label>3.Elige tu forma de pago</label>
+      <input type="radio">crédito</input>
+      <input type="radio">debito</input>
+      <button>Continuar</button>
+    </form>
+    <!--<main>
+        <form>
+          <h2>Registrate</h2>
+          <label for="firstName">Nombre(s)</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Campo obligatorio"
+          />
+          <label id="primerNombre"></label>
 
-        <br />
-        <br />
-        <label for="lastName">Apellidos</label>
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          placeholder="Campo obligatorio"
-        />
-        <label id="apellido"></label>
-        <p id="inscripción"></p>
-        <br />
-        <label for="lastName">Correo Electrónico</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Campo obligatorio"
-        />
-        <label id="correo"></label>
-        <br />
-        <br />
-        <label for="typeTarjet">Elije el tipo de tarjeta</label>
-        <select name="typeTarjet" id="typeTarjet">
-          <option value="select">Seleccionar</option>
-          <option value="debito">Tarjeta de débito</option>
-          <option value="credito">Tarjeta de crédito</option>
-        </select>
-        <label id="tipoTarjeta"></label>
-        <br />
-        <br />
-        <h3>Ingresa los datos de tu tarjeta y valida para continuar.</h3>
-        <br />
+          <br />
+          <br />
+          <label for="lastName">Apellidos</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Campo obligatorio"
+          />
+          <label id="apellido"></label>
+          <p id="inscripción"></p>
+          <br />
+          <label for="lastName">Correo Electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Campo obligatorio"
+          />
+          <label id="correo"></label>
+          <br />
+          <br />
+          <label for="typeTarjet">Elije el tipo de tarjeta</label>
+          <select name="typeTarjet" id="typeTarjet">
+            <option value="select">Seleccionar</option>
+            <option value="debito">Tarjeta de débito</option>
+            <option value="credito">Tarjeta de crédito</option>
+          </select>
+          <label id="tipoTarjeta"></label>
+          <br />
+          <br />
+          <h3>Ingresa los datos de tu tarjeta y valida para continuar.</h3>
+          <br />
 
-        <label for="creditCardNumber">Número de tarjeta:</label>
-        <input
-          type="text"
-          id="numTarjeta"
-          name="numTarjeta"
-          placeholder="Campo obligatorio"
-        />
-        <button id="botonValidar" type="button">Validar</button>
+          <label for="creditCardNumber">Número de tarjeta:</label>
+          <input
+            type="text"
+            id="numTarjeta"
+            name="numTarjeta"
+            placeholder="Campo obligatorio"
+          />
+          <button id="botonValidar" type="button">Validar</button>
 
-        <p id="justNumbers"></p>
-        <p id="justSixteen"></p>
-        <br />
-        <label id="asteriscos"></label>
-        <button id="sendForm" type="button">Terminar registro</button>
-      </form>
-    </main>
-
-    <footer><h5>Inicio | Contactos | Políticas de privacidad</h5></footer>
-   </div>
+          <p id="justNumbers"></p>
+          <p id="justSixteen"></p>
+          <br />
+          <label id="asteriscos"></label>
+          <button id="sendForm" type="button">Terminar registro</button>
+        </form>
+      </main>
+-->
+    <footer><h5>Laboratoria 2022 | AnaDaniela Andrade</h5></footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
