@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
-
-
+.container{
+    width: 100%;
+    height: 100%;
+}
 /*Tipografía*/
 h1 /*título de página*/ {
     font-family: 'Oswald';
@@ -12,60 +13,69 @@ h1 /*título de página*/ {
     color: #3F51B5;
     font-size: 34px;
 }
-/*Títulos*/
-h2{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /*familia de la letra que escogí*/
-    font-weight: bold; /*peso o grueso de la letra*/
-    font-size: 30px;
-    line-height: normal; /*distancia entre lineas del texto*/
-    text-align: center;
-    color: #023047;
-    }
-/*Título de pie de página*/
-h4{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 16px;
-    color:red;
-}
-h5{
+h5 /*título de footer*/ {
     font-family: 'Oswald';
     font-style: normal;
     font-size: 16px;
     color:#FFB703;
     text-align: center;
 }
+h2 /*título de encabezado*/ {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    }
+h4 /*título de errores*/ {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    color:red;
+}
+p, li, label{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 /*Secciones de la página*/
 header{
     background:  #FFB703;
     height:150px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
-.tittle{
-    position: relative;
-    left: 40%;
-    top: 50%;
+aside /*objeto de lado izquierdo*/{
+    border: #3F51B5;
+    border-style: solid;
+    padding: 3%;
+    border-radius: 15px;
 }
-p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 main{
-    position: static;
-    background: #FFB703;
-    padding: 25px;
-    width: 650px;
-    text-align: center;
+    display:flex;
+    justify-content:space-around;  
+    height:100%;
 }
 form{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #023047;
-    font-size: 16px;
-    padding: 15px;
+    border: #3F51B5;
+    border-style: solid;
+    padding: 3%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-aside{
-    position:absolute;
-    left: 750px;
+ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
-
-input[type=text],input[type=email], select{
+input[type=text],input[type=email], input[type=number], input[type=date],input[type=radio], select{
     padding: 10px;
     margin:10px;  
     border-radius:10px; 
@@ -73,7 +83,7 @@ input[type=text],input[type=email], select{
     font-size: 12px;     
 }
 
-button{
+button{ /*falta*/
     appearance:none;
     -webkit-appearance:none;
     /* usual styles */
