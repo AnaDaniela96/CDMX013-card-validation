@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CardValidation</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Museo de barcos y armas de Campeche</h1>
+      </header><br/>
+      <article>
+        <h2>
+          Este es el sitio para pagar tu entrada al Museo más increíble de
+          Campeche. ¡Estás a sólo un paso!
+        </h2>
+        <br/>
+        <p>
+          *Recuerda que sólo aceptamos pagos con tarjeta de debito y crédito
+        </p>
+        <br/>
+      </article>
+      <br/>
+      <main>
+        <aside>
+          <ol>
+            <h2>Sigue los pasos hasta terminar tu compra</h2>
+            <br />
+            <li>Elige el número de boletos</li>
+            <input type="number" />
+            <li>Elige la fecha de tu visita</li>
+            <input
+              type="date"
+              id="start"
+              name="trip-start"
+              value="2023-01-01"
+              min="2023-01-01"
+              max="2023-12-31"
+            />
+            <br />
+            <li>Registra los datos que aparecen en la tarjeta</li>
+            <label for="firstName">Nombre(s)</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Campo obligatorio"
+            /><br>
+            <label id="primerNombre"></label>
+            <label for="lastName">Apellidos</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Campo obligatorio"
+            />
+            <label id="apellido"></label>
+            <p id="inscripción"></p>
+            <li>Escribe el tu correo para recibir tus boletos</li>
+            <label for="lastName">Correo Electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Campo obligatorio"
+          />
+          <label id="correo"></label>
+          </ol>
+        </aside>
+        <form>
+          <br>
+          <br>
+          <p>5.Concluye tu compra agregando una forma de pago</p>
+          <br>
+          <label for="typeTarjet">Elije el tipo de tarjeta</label>
+          <select name="typeTarjet" id="typeTarjet">
+            <option value="select">Seleccionar</option>
+            <option value="debito">Tarjeta de débito</option>
+            <option value="credito">Tarjeta de crédito</option>
+          </select>
+          <label id="tipoTarjeta"></label>
+          <p>6.Ingresa los datos de tu tarjeta y valida para continuar.</p>
+          <br />
+          <label for="creditCardNumber">Número de tarjeta:</label>
+          <input
+            type="text"
+            id="numTarjeta"
+            name="numTarjeta"
+            placeholder="Campo obligatorio"
+          />
+          <button id="botonValidar" type="button">Validar</button>
+          <p id="justNumbers"></p>
+          <p id="justSixteen"></p>
+          <br />
+          <label id="asteriscos"></label>
+          <button id="sendForm" type="button">Finaliza tu compra</button>
+        </form>
+      </main>
+      <br/>
+      <footer>
+        <h5>Laboratoria 2022 | AnaDaniela Andrade</h5>
+      </footer>
+    </div>
+  </body>
+  <script src="/src/index.js" type="module"></script>
+</html>
